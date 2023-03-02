@@ -28,6 +28,8 @@ body {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
+  position: fixed;
+
 }
 
 .topnav a {
@@ -62,7 +64,7 @@ h2 {
 }
 
 form {
-  margin-top: 2em;
+  margin-top: 9em;
   padding: 2em 0;
   background-color: white;
   color: black;
@@ -108,9 +110,52 @@ form input[type=text] {
   transform-origin: bottom right;
   transition: all 0.5s ;
 } */
-.bottomnav a:visited,
-a:active {
-  text-decoration: underline;
+ul {
+  list-style-type: none;
+  display: inline;
+}
+
+li {
+  float: left;
+}
+
+.bottomnav a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 30px;
+}
+
+.bottomnav a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottomnav a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottomnav a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  bottom: 15px;
+  border-radius: 6px;
+  background-color: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in 2s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li.active a:before,
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .column {
@@ -178,7 +223,8 @@ a:active {
 #post1 {
   border-radius: 25px;
   background: #73AD21;
-  padding: 20px;
+  padding: 80px;
+  margin-top: 80px;
   width: 200px;
   height: 150px;
 }
@@ -186,7 +232,7 @@ a:active {
 #post2 {
   border-radius: 25px;
   background: #73AD21;
-  padding: 20px;
+  padding: 80px;
   width: 200px;
   height: 150px;
 }
@@ -194,7 +240,7 @@ a:active {
 #post3 {
   border-radius: 25px;
   background: #73AD21;
-  padding: 20px;
+  padding: 80px;
   width: 200px;
   height: 150px;
 }
