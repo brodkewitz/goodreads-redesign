@@ -11,7 +11,7 @@ img {
   height: auto;
 }
 
-.profile{
+.profile {
   display: block;
   width: 10px;
   height: 10px;
@@ -46,11 +46,6 @@ h2 {
 
 .site-header {
   background-color: #F9F7F4;
-}
-
-.left {
-  grid-column: 1;
-  grid-row: 1;
 }
 
 /* .right {
@@ -98,15 +93,11 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 3em;
+  padding: 2em;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
   margin: 0 0 3em;
-}
-
-nav ul li img:nth-child(3){
-  width: 20%;
+  justify-content: space-around;
 }
 
 main {
@@ -121,13 +112,11 @@ aside {
   background-color: #F9F7F4;
   border-radius: 2em;
   color: rgb(160, 160, 160);
-  
 }
 
 .shelves {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  
 }
 
 
@@ -140,7 +129,6 @@ aside {
 .site-footer a {
   text-decoration: underline;
 }
-
 
 @media (min-width: 62em) {
   .wrapper {
@@ -197,7 +185,6 @@ input[type=text] {
   background: #FFFFFF;
   width: 30%;
   height: 2em;
-  margin-top: 1em;
   padding-left: 30px;
   border: #ffffff 1px solid;
   color: #333333;
@@ -226,11 +213,13 @@ form {
   background-color: white;
   color: black;
   border-color: #ffffff;
-  height: 60px;
-  width: 600px;
+  height: 50px;
+  width: 700px;
   text-shadow: none;
   text-align: center;
   border-radius: 8px;
+  margin-left: 20px;
+
 }
 
 form input[type=text] {
@@ -242,6 +231,14 @@ form input[type=text] {
   border: white solid;
   color: #000000;
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+ul> .active {
+  padding: 3em;
 }
 
 /* .bottomnav{
@@ -277,6 +274,25 @@ li {
   float: left;
 }
 
+ul li:nth-child(-n + 3) {
+  margin: 5px 0;
+}
+
+ul li:nth-child(-n + 4) {
+  padding: 0 4em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: rgb(91, 91, 91);
+}
 
 .rounded {
   border-radius: 7px;
@@ -285,8 +301,8 @@ li {
 .post {
   border-radius: 10px;
   background: #ffffff;
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   margin-bottom: 20px;
   margin-left: 20px;
   hyphens: auto;
