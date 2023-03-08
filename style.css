@@ -187,26 +187,6 @@ li {
   text-decoration: none;
 }
 
-.bottomnav a:before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 5px;
-  bottom: 15px;
-  border-radius: 6px;
-  background-color: #000;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.4s ease-in 2s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-li.active a:before,
-a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
 
 .column {
   float: left;
