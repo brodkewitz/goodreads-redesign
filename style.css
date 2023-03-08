@@ -9,6 +9,27 @@ body {
   color: rgb(71, 71, 71);
 }
 
+.wrapper{
+  display: grid;
+  grid-template-columns: 1, 1fr
+                         2., 1fr, 2fr;
+  grid-template-rows: auto;
+}
+
+.topnav{
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.left{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.right{
+  grid-column: 2 / 3;
+}
+
 #profile{
   max-width: 25%;
   height: auto;
@@ -82,19 +103,11 @@ h2 {
   padding-top: 8em;
 }
 
-.row img:nth-child(n + 3){
+.rounded{
   border-radius: 7px;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
 }
-.row img:nth-child(n + 3):hover, .row img:nth-child(n + 3):focus, .row img:nth-child(n + 3):active {
+
+.rounded:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -146,6 +159,7 @@ form input[type=text] {
   transform-origin: bottom right;
   transition: all 0.5s ;
 } */
+
 ul {
   list-style-type: none;
   display: inline;
@@ -261,4 +275,8 @@ a:hover:before {
   padding: 80px;
   width: 200px;
   height: 150px;
+}
+
+.rounded{
+  border-radius: 7px;
 }
