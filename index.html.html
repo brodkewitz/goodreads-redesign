@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,13 +50,13 @@
                 <h2>BOOKSHELVES</h2>
                 <div class="shelves">
                     <img src="./shelf1.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p>Lorem ipsum</p>
+                    <p>Favorites</p>
                     <img src="./shelf2.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p>Lorem ipsum</p>
+                    <p>Cookbooks</p>
                     <img src="./shelf3.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p></p>Lorem ipsum</p>
+                    <p>Summer Reads</p>
                     <img src="./shelf4.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p></p>Lorem ipsum</p>
+                    <p>Want to Read</p>
                 </div>
                 <a href="#view-more">View More</a>
             </header>
@@ -68,9 +69,10 @@
                 </div>
                 <input type="text" id="write" placeholder="Write a Review"><br>
             </form>
-            <ul>
-                <li class="active"><a href="#">UPDATES</a></li>
-                <li><a href="#">RECOMMENDATIONS</a></li>
+            <ul class="bar">
+                <hr>
+                <span class="underline"><a href="#">UPDATES</a></span>
+                <a href="#">RECOMMENDATIONS</a>
             </ul>
             <section class="main-content">
                 <div class="container">
@@ -84,28 +86,108 @@
                                                     class="author-img"></a>
                                         </div>
                                         <div>
-                                            <h5 class="profile-name"><a href="#!" class="profile-name">Lorem Ipsum</a></h5>
+                                            <h5 class="profile-name"><a href="#!" class="profile-name">Lorem Ipsum</a>
+                                            </h5>
                                             <p class="time">23m</p>
                                         </div>
                                     </div>
-                                    <div class="post-block__user-options">
 
-                                    </div>
                                 </div>
                                 <div class="post-block__content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam non
-                                        atque,
-                                        porro cupiditate commodi? Provident culpa vel sit enim!</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam non
-                                        atque,
-                                        porro cupiditate commodi? Provident culpa vel sit enim!</p>
-
                                     <img src="./post1.jpg" alt="Content img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam non
+                                        atque,
+                                        porro cupiditate commodi? Provident culpa vel sit enim!
+                                        <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                                        laboriosam
+                                        non
+                                        atque,
+                                        porro cupiditate commodi? Provident culpa vel sit enim!
+                                    </p>
+
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Read
+                                            <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Currently Reading</a>
+                                            <a href="#">Want to Read</a>
+                                            <a href="#">Read </a>
+                                        </div>
+                                    </div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
                                 </div>
                                 <div class="actions">
                                     <a href="#!"><span><i class="fa fa-heart"></i></span></a>
-                                    <a href="#!"><span>Comment</span></a>
-                                    <a href="#!"><span>Share</span></a>
+                                    <a href="#!"><span><i class="fa fa-comment"></i>
+                                        </span></a>
+                                    <a href="#!"><span><i class="share"></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </section>
+
+
+            <section class="main-content-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 offset-sm-3">
+                            <div class="post-block">
+                                <div class="justify-content">
+                                    <div class="white-space">
+                                        <div class="white-space-2">
+                                            <a href="#!" class="profile-pic"><img src="./profile-icon2.png" alt="User"
+                                                    class="author-img"></a>
+                                        </div>
+                                        <div>
+                                            <h5 class="profile-name"><a href="#!" class="profile-name">Lorem Ipsum</a>
+                                            </h5>
+                                            <p class="time">23m</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="post-block__content">
+                                    <img src="./post2.jfif" alt="Content img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam non
+                                        atque,
+                                        porro cupiditate commodi? Provident culpa vel sit enim!
+                                        <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                                        laboriosam
+                                        non
+                                        atque,
+                                        porro cupiditate commodi? Provident culpa vel sit enim!
+                                    </p>
+
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Read
+                                            <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Currently Reading</a>
+                                            <a href="#">Want to Read</a>
+                                            <a href="#">Read </a>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="progress-bar-fill" style="width: 75%;"></span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="#!"><span><i class="fa fa-heart"></i></span></a>
+                                    <a href="#!"><span><i class="fa fa-comment"></i>
+                                        </span></a>
+                                    <a href="#!"><span><i class="share"></span></a>
                                 </div>
                             </div>
 
@@ -119,7 +201,7 @@
         </aside>
 
         <footer class="site-footer">
-            Source:
+            Footer:
             <a href="https://goodreads.com" </a>
         </footer>
 
