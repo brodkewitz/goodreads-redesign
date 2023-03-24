@@ -52,7 +52,7 @@ h2 {
 nav {
   background: #dcd7c8;
   font-size: 15px;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   width: 100%;
   position: fixed;
@@ -298,12 +298,12 @@ a:hover {
 
 hr {
   position: relative;
-  top: 5px;
+  top: 9px;
   border: none;
   height: 2px;
   background: rgb(217, 217, 217);
   margin-bottom: 30px;
-  width: 70%;
+  width: 64%;
 }
 
 .progress-bar {
@@ -344,6 +344,7 @@ img.author-img {
   width: 45px;
   border-radius: 45px;
   margin-left: 3em;
+  margin-top: 1em;
 }
 
 img.author-img.author-img--small {
@@ -387,6 +388,7 @@ img.author-img.author-img--small {
 
 .time {
   float: right;
+  font-size: 14px;
 }
 
 .profile-pic {
@@ -396,7 +398,7 @@ img.author-img.author-img--small {
 .profile-name {
   font-size: 16px;
   padding-left: 15px;
-  margin-top: 10px;
+  margin-top: 24px;
 }
 
 .checked {
@@ -489,16 +491,8 @@ img.author-img.author-img--small {
 .bar {
   display: flex;
   margin-left: 10em;
+  margin-bottom: -1.5em;
 }
 
 
 
-/* .starbar{
-margin-left: 14em;
-}
-
-.stardiv{
-  display: flex;
-  flex: row;
-
-} */
