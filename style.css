@@ -174,7 +174,11 @@ h2 {
   position: relative;
   left: 155px;
   bottom: 120px;
-  font-style: bold;
+  font-weight: 600;
+}
+
+.shelves p:hover {
+  text-decoration: underline;
 }
 
 .rounded:hover {
@@ -204,6 +208,10 @@ h2 {
   bottom: 170px;
   font-family: "Lato", serif;
   font-size: 14px;
+}
+
+.book p:hover {
+text-decoration: underline;
 }
 
 form {
@@ -347,6 +355,12 @@ hr {
   margin-top: -1.8em;
 }
 
+img.cover:hover{
+    -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.4s;
+  
+}
 
 img.author-img {
   height: 45px;
