@@ -90,7 +90,8 @@ aside {
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
 
-.fa-heart:before, .fa-comment:before{
+.fa-heart:before,
+.fa-comment:before {
   color: #d7d7d7;
 }
 
@@ -185,7 +186,12 @@ h2 {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transition: 0.4s;
+  box-shadow: 1px 1px 2px rgb(105, 105, 105), 0 0 4px rgb(140, 140, 145), 0 0 3px rgb(57, 57, 60);
 
+}
+
+.rounded {
+  transition: all .2s ease-in-out;
 }
 
 .book:nth-child(2) {
@@ -211,7 +217,7 @@ h2 {
 }
 
 .book p:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 form {
@@ -238,7 +244,7 @@ form input[type=text] {
   border: white solid;
   color: #000000;
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-  margin-left:2em;
+  margin-left: 2em;
 }
 
 .active {
@@ -292,7 +298,7 @@ a:link {
   color: #000000;
 }
 
-a:visited {
+f a:visited {
   color: black;
 }
 
@@ -351,16 +357,21 @@ hr {
   padding: 1em;
 }
 
-.author{
+.author {
   margin-top: -1.8em;
 }
 
-img.cover:hover{
-    -webkit-transform: scale(1.1);
+img.cover:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  transition: 0.4s;
-  
+  transition-duration: 500ms;
+  box-shadow: 1px 1px 2px rgb(105, 105, 105), 0 0 2px rgb(140, 140, 145), 0 0 3px rgb(118, 118, 118);
 }
+
+img.cover {
+  transition: all .3s ease-in-out;
+}
+
 
 img.author-img {
   height: 45px;
@@ -401,8 +412,9 @@ img.author-img.author-img--small {
   margin-top: 5px;
 }
 
-.content-vertical h1:hover, .author p:hover{
-  color:#786c6c;
+.content-vertical h1:hover,
+.author p:hover {
+  color: #786c6c;
   text-decoration: underline;
 }
 
@@ -489,13 +501,13 @@ img.author-img.author-img--small {
   margin: 0;
   min-width: 200px;
   text-align: left;
-  border: #1dab45;
+  border: #40be64;
 
 }
 
 .dropdown a:hover,
 .dropdown:hover .dropbtn {
-  background-color: rgb(136, 205, 146);
+  background-color: rgb(72, 149, 83);
   border-radius: 10px;
 
 }
@@ -539,7 +551,6 @@ img.author-img.author-img--small {
   margin-left: 10em;
   margin-bottom: -1.5em;
 }
-
 
 
 .starbar {
