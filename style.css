@@ -558,3 +558,8 @@ img.author-img.author-img--small {
 h2:hover{
   text-decoration: underline;
 }
+
+.bar > li{
+  margin-left: 2em;
+}
+
