@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Goodreads Redesign</title>
     <link rel="icon" type="image/x-icon" href="./favicon.webp">
@@ -34,34 +33,95 @@
         </nav>
     </header>
     <main class="wrapper">
-        <aside>
-            <section class="main-content">
-                <div class="container">
-                    <a href="#!" class="profile-pic"><img src="./laila-pfp.jpg" alt="User" class="author-img"></a>
-                    <div>
-                        <h5 class="profile-name"><a href="#!" class="profile-name">Laila</a>
+        <div class="container">
 
-                    </div>
-                    </h5>
-                    <div class="post-block">
-                
+            <div class="profile">
 
-                        <div class="post-block__content">
-                            <img src="./post3.jpg" alt="Content img">
-                            <div class="content-vertical">
-                                <h1>PROFILE INFO
-                                </h1>
+                <div class="profile-image">
 
-                            </div>
+                    <img src="./laila-pfp.jpg" alt="">
 
-                        </div>
-
-                    </div>
                 </div>
-                </div>
-            </section>
-        </aside>
 
+                <div class="profile-user-settings">
+
+                    <h1 class="profile-user-name">Laila Isfahan</h1><br>
+                    <span class="profile-real-name">@laila_reads</span>
+                    <button class="btn profile-edit-btn">Edit Profile</button>
+                    <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fa fa-cog"
+                            aria-hidden="true"></i></button>
+                </div>
+
+                <div class="profile-stats">
+                    <ul>
+                        <li><span class="joined"> <b>JOINED FEBRUARY 2013</b>
+                        </li><br>
+                        <li><span class="profile-stat-count">164</span> books read</li>
+                        <li><span class="profile-stat-count">38</span> followers</li>
+                        <li><span class="profile-stat-count">21</span> following</li>
+                    </ul>
+                </div>
+
+                <div class="profile-bio">
+                    <p> I love Adam Parrish.
+                        <br>
+                        <br>
+                        -a loose guide to my rating system-
+                        <br>
+                        * utterly disappointing or unreadable
+                        <br>
+                        ** intense desire to skim read
+                        <br>
+                        *** forgettable or just okay
+                        <br>
+                        **** good!! or there’s a single perfect aspect I adore
+                        <br>
+                        ***** I will reread this/ some part of this will stay with me forever (less)
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- End of profile section -->
+            <hr>
+
+        </div>
+        <!-- End of container -->
+        <div class="slider">
+            <ul>
+                <li class="one"><a href="#">BOOKSHELVES</a></li><!--
+           -->
+                <li class="two"><a href="#">FAVORITES</a></li><!--
+           -->
+                <li class="three"><a href="#">REVIEWS</a></li><!--
+           -->
+                <li class="four"><a href="#">READING STATS</a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="left-wrapper">
+            <div class="row">
+              <div class="column">
+                <div class="shelves">
+                    <img src="./shelf1.jpg" class="rounded" style="width: 140px;height:140px;">
+                    <p>Favorites</p><br><h3>my favorites of all time</h3>
+                    <img src="./shelf2.jpg" class="rounded" style="width: 140px;height:140px;">
+                    <p>Cookbooks</p><br><h3>baking and cooking recipes</h3>
+                    <img src="./shelf3.jpg" class="rounded" style="width: 140px;height:140px;">
+                    <p>Summer Reads</p><br><h3>warm weather reads</h3>
+                    <img src="./shelf4.jpg" class="rounded" style="width: 140px;height:140px;">
+                    <p>Want to Read</p><br><h3>this list is getting too long</h3>
+                </div>
+              </div>
+              <div class="double-column">
+                <div class="green-column">
+                  COLUMN 2
+                </div>
+              </div>
+            </div>
+          </div>
+    
+            </div>
         <footer class="site-footer">
         </footer>
 

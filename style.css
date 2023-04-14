@@ -90,11 +90,6 @@ aside {
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
 
-.fa-heart:before,
-.fa-comment:before {
-  color: #d7d7d7;
-}
-
 
 .site-footer {
   padding: 2.5em 2.5em 3.5em;
@@ -192,6 +187,7 @@ h2 {
 
 .rounded {
   transition: all .2s ease-in-out;
+    border-radius: 7px;
 }
 
 .book:nth-child(2) {
@@ -285,20 +281,13 @@ li {
   display: flex;
 }
 
-ul li:nth-child(-n + 3) {
-  margin: 5px 0;
-}
-
-ul li:nth-child(-n + 4) {
-  padding: 0 1em;
-}
 
 a:link {
   text-decoration: none;
   color: #000000;
 }
 
-f a:visited {
+a:visited {
   color: black;
 }
 
@@ -306,9 +295,6 @@ a:hover {
   color: rgb(91, 91, 91);
 }
 
-.rounded {
-  border-radius: 7px;
-}
 
 .cover {
   border-radius: 6px;
@@ -364,7 +350,7 @@ hr {
 img.cover:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  transition-duration: 500ms;
+  transition-duration: 400ms;
   box-shadow: 1px 1px 2px rgb(105, 105, 105), 0 0 2px rgb(140, 140, 145), 0 0 3px rgb(118, 118, 118);
 }
 
@@ -474,7 +460,7 @@ img.author-img.author-img--small {
 
 .underline {
   border-bottom: 4px solid currentColor;
-  border-radius: 4px;
+  border-radius: 2px;
   color: #000000;
 }
 
@@ -555,4 +541,20 @@ img.author-img.author-img--small {
 
 .starbar {
   margin-bottom: 1em;
+}
+
+.fa-heart,
+.fa-comment{
+  color: #acacac;
+}
+.fa-heart:hover {
+  color: red;
+}
+
+.fa-comment:hover {
+  color: rgb(174, 219, 242);
+}
+
+h2:hover{
+  text-decoration: underline;
 }
