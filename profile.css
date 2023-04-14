@@ -23,50 +23,26 @@ h1 {
   color: rgb(44, 44, 44);
 }
 
-.shelves p {
+h2 {
   font-family: "Lato", serif;
   font-weight: 600;
   letter-spacing: .5px;
   font-style: bold;
-  font-size: 18px;
+  font-size: 14px;
   color: rgb(44, 44, 44);
-  position: relative;
-  left: 180px;
-  bottom: 120px;
+  justify-content: center;
 }
 
- h3{
+h3 {
   position: relative;
   left: 180px;
   bottom: 125px;
   font-size: 13px;
   font-weight: 500;
-
- }
-
- .left-spacing{
-  margin-top: -4em;
- }
-
- .left-first{
-  padding-top:5em;
- }
-
-.logo {
-  padding-right: 5em;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1600px;
-  background-color: #F9F7F4;
-}
-
-.site-header {
-  background-color: #F9F7F4;
-  align-items: baseline;
-  padding-bottom: 10em;
-  z-index: 1;
+img {
+  display: block;
 }
 
 nav {
@@ -87,14 +63,41 @@ nav ul {
   justify-content: space-around;
 }
 
-.site-footer {
-  padding: 2.5em 2.5em 3.5em;
-  text-align: center;
+.logo {
+  padding-right: 5em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
   background-color: #F9F7F4;
 }
 
-.site-footer a {
-  text-decoration: underline;
+.site-header {
+  background-color: #F9F7F4;
+  align-items: baseline;
+  padding-bottom: 10em;
+  z-index: 1;
+}
+
+.shelves p {
+  font-family: "Lato", serif;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-style: bold;
+  font-size: 18px;
+  color: rgb(44, 44, 44);
+  position: relative;
+  left: 180px;
+  bottom: 120px;
+}
+
+.left-spacing {
+  margin-top: -4em;
+}
+
+.left-first {
+  padding-top: 5em;
 }
 
 .site-header {
@@ -102,7 +105,10 @@ nav ul {
 }
 
 .site-footer {
+  padding: 2.5em 2.5em 3.5em;
+  background-color: #F9F7F4;
   grid-area: footer;
+
 }
 
 input[type=text] {
@@ -117,20 +123,9 @@ input[type=text] {
   border-radius: 3px;
 }
 
-h2 {
-  font-family: "Lato", serif;
-  font-weight: 600;
-  letter-spacing: .5px;
-  font-style: bold;
-  font-size: 14px;
-  color: rgb(44, 44, 44);
-  justify-content: center;
-}
-
-.active {
+a:active {
   text-decoration: underline;
 }
-
 
 a:link {
   text-decoration: none;
@@ -154,10 +149,6 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  display: block;
-}
-
 .container {
   max-width: 93.5rem;
   margin: 0 auto;
@@ -177,9 +168,6 @@ img {
 .btn:focus {
   outline: 0.5rem auto #4d90fe;
 }
-
-
-/* Profile Section */
 
 .profile {
   padding: 5rem 0;
@@ -258,13 +246,9 @@ img {
   font-size: 16px;
 }
 
-
-
 :root {
   font-size: 10px;
 }
-
-
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
@@ -298,8 +282,6 @@ img {
   outline: 0.5rem auto #4d90fe;
 }
 
-/* Profile Section */
-
 .profile {
   padding: 5rem 0;
 }
@@ -322,7 +304,6 @@ img {
 .profile-image img {
   border-radius: 50%;
   margin-top: -18em;
-
 }
 
 .profile-user-settings,
@@ -540,7 +521,6 @@ img {
   font: 600 150% 'Lato', Helvetica, Arial;
 }
 
-
 .two:hover~hr {
   margin-left: 25%;
 }
@@ -640,7 +620,6 @@ ul {
 .rounded {
   transition: all .2s ease-in-out;
   border-radius: 7px;
-
 }
 
 .circle-wrap {
@@ -678,13 +657,10 @@ ul {
   font-size: 3em;
 }
 
-/* color animation */
-
-/* 3rd progress bar */
 .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background: rgb(254,255,0);
-background: linear-gradient(90deg, rgba(254,255,0,1) 0%, rgba(79,255,165,1) 52%, rgba(0,255,239,1) 100%);
+  background: rgb(254, 255, 0);
+  background: linear-gradient(90deg, rgba(254, 255, 0, 1) 0%, rgba(79, 255, 165, 1) 52%, rgba(0, 255, 239, 1) 100%);
 }
 
 .mask.full,
@@ -693,43 +669,46 @@ background: linear-gradient(90deg, rgba(254,255,0,1) 0%, rgba(79,255,165,1) 52%,
   transform: rotate(162deg);
 }
 
-@keyframes fill{
+@keyframes fill {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(162deg);
   }
 }
-.title{
+
+.title {
   text-align: center;
   margin-top: 2em;
   font-size: 3em;
 }
 
-.title > h2{
+.title>h2 {
   font-size: .8em;
   margin-top: -1em;
 }
 
-.info > h2{
+.info>h2 {
   font-size: 1em;
   margin-top: -1em;
-
 }
 
 
-.info{
+.info {
   text-align: center;
   margin-top: -8em;
   font-size: 2em;
 }
-.info a, .title a{
+
+.info a,
+.title a {
   text-decoration: underline;
   font-size: 14px;
 }
 
-.edit{
+.edit {
   margin-left: 30em;
   margin-bottom: 1em;
   display: flex;
@@ -740,13 +719,12 @@ background: linear-gradient(90deg, rgba(254,255,0,1) 0%, rgba(79,255,165,1) 52%,
 
 
 .fa-edit,
-.fa-plus{
+.fa-plus {
   color: rgb(37, 37, 37);
-  
+
 }
 
-.fa-edit:hover, .fa-plus:hover {
+.fa-edit:hover,
+.fa-plus:hover {
   color: #acacac;
 }
-
-
