@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "utf-8"; /*forgot I could have used one style sheet! */
 
 html,
 body {
@@ -11,9 +11,14 @@ img {
   height: auto;
 }
 
+/*set standard formatting for page */
 body {
   background-color: #F9F7F4;
   font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #262626;
+  padding-bottom: 3rem;
   color: rgb(71, 71, 71);
 }
 
@@ -52,7 +57,7 @@ nav {
   box-sizing: border-box;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 1; /*place on top */
 }
 
 nav ul {
@@ -61,6 +66,10 @@ nav ul {
   display: flex;
   margin: 0 0 3em;
   justify-content: space-around;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 .logo {
@@ -78,18 +87,6 @@ nav ul {
   align-items: baseline;
   padding-bottom: 10em;
   z-index: 1;
-}
-
-.shelves p {
-  font-family: "Lato", serif;
-  font-weight: 600;
-  letter-spacing: .5px;
-  font-style: bold;
-  font-size: 18px;
-  color: rgb(44, 44, 44);
-  position: relative;
-  left: 180px;
-  bottom: 120px;
 }
 
 .left-spacing {
@@ -111,6 +108,7 @@ nav ul {
 
 }
 
+/* search bar*/
 input[type=text] {
   background: #FFFFFF;
   width: 30%;
@@ -123,6 +121,7 @@ input[type=text] {
   border-radius: 3px;
 }
 
+/* links*/
 a:active {
   text-decoration: underline;
 }
@@ -155,6 +154,7 @@ a:hover {
   padding: 0 2rem;
 }
 
+/* profile buttons*/
 .btn {
   display: inline-block;
   font: inherit;
@@ -165,7 +165,7 @@ a:hover {
   cursor: pointer;
 }
 
-.btn:focus {
+.btn:focus { /*adds square around item when clicked */
   outline: 0.5rem auto #4d90fe;
 }
 
@@ -192,44 +192,7 @@ a:hover {
   border-radius: 50%;
 }
 
-.profile-user-settings,
-.profile-bio {
-  float: left;
-  width: calc(66.666% - 2rem);
-}
-
-.profile-user-settings {
-  margin-top: 1.1rem;
-}
-
-.profile-user-name {
-  display: inline-block;
-  font-size: 3.2rem;
-  font-weight: 300;
-}
-
-.profile-edit-btn {
-  font-size: 1.4rem;
-  line-height: 1.8;
-  border: 0.1rem solid #dbdbdb;
-  border-radius: 0.3rem;
-  padding: 0 2.4rem;
-  margin-left: 2rem;
-}
-
-.profile-settings-btn {
-  font-size: 2rem;
-  margin-left: 1rem;
-}
-
-.profile-stats li {
-  display: inline-block;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  margin-right: 4rem;
-  padding-top: .5em;
-}
-
+/* set formatting for profile user settings*/
 .profile-bio {
   font-size: 1.6rem;
   font-weight: 400;
@@ -250,38 +213,6 @@ a:hover {
   font-size: 10px;
 }
 
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-  min-height: 100vh;
-  background-color: #fafafa;
-  color: #262626;
-  padding-bottom: 3rem;
-}
-
-img {
-  display: block;
-}
-
-.container {
-  max-width: 93.5rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.btn {
-  display: inline-block;
-  font: inherit;
-  background: none;
-  border: none;
-  color: inherit;
-  padding: 0;
-  cursor: pointer;
-}
-
-.btn:focus {
-  outline: 0.5rem auto #4d90fe;
-}
-
 .profile {
   padding: 5rem 0;
 }
@@ -292,25 +223,11 @@ img {
   clear: both;
 }
 
-.profile-image {
-  float: left;
-  width: calc(33.333% - 1rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 3rem;
-}
-
-.profile-image img {
-  border-radius: 50%;
-  margin-top: -18em;
-}
-
 .profile-user-settings,
 .profile-stats,
 .profile-bio {
   float: left;
-  width: calc(66.666% - 2rem);
+  width: calc(66.666% - 2rem); /*align info*/
 }
 
 .profile-user-settings {
@@ -365,6 +282,7 @@ img {
   font-weight: 600;
 }
 
+/* set media query*/
 @media screen and (max-width: 40rem) {
   .profile {
     display: flex;
@@ -496,10 +414,12 @@ img {
   letter-spacing: .5px;
 }
 
+/*font awesome icon*/
 .fa-cog {
   color: black;
 }
 
+/*sliding menu underline bar*/
 .slider {
   width: 50%;
   margin: 0 auto;
@@ -521,6 +441,7 @@ img {
   font: 600 150% 'Lato', Helvetica, Arial;
 }
 
+/*set percentages of bar that will show on hover*/
 .two:hover~hr {
   margin-left: 25%;
 }
@@ -533,6 +454,7 @@ img {
   margin-left: 75%;
 }
 
+/*menu bar slider underline*/
 .slider hr {
   height: .4rem;
   width: 23%;
@@ -564,17 +486,7 @@ hr {
   padding-top: 4em;
 }
 
-.double-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
-  margin-right: 18em;
-}
-
+/*first column*/
 .column {
   display: flex;
   flex-direction: column;
@@ -589,14 +501,39 @@ hr {
   padding: 1em;
 }
 
-ul {
-  padding-inline-start: 0;
+/*create second column*/
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+  margin-right: 18em;
 }
 
+/*bookshelves column*/
 .shelves {
   grid-template-columns: 1fr;
   margin-left: 6em;
   margin-top: 5em;
+}
+
+.shelves p {
+  font-family: "Lato", serif;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-style: bold;
+  font-size: 18px;
+  color: rgb(44, 44, 44);
+  position: relative;
+  left: 180px;
+  bottom: 120px;
+}
+
+.shelves p:hover {
+  text-decoration: underline;
 }
 
 .post-block__content img {
@@ -605,16 +542,12 @@ ul {
   max-height: 300px;
 }
 
-.shelves p:hover {
-  text-decoration: underline;
-}
-
+/*round effect and pop up hover*/
 .rounded:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transition: 0.4s;
   box-shadow: 1px 1px 2px rgb(105, 105, 105), 0 0 4px rgb(140, 140, 145), 0 0 3px rgb(57, 57, 60);
-
 }
 
 .rounded {
@@ -622,6 +555,7 @@ ul {
   border-radius: 7px;
 }
 
+/*circular progress bar animation*/
 .circle-wrap {
   margin: 150px auto;
   width: 150px;
@@ -630,6 +564,7 @@ ul {
   border-radius: 50%;
 }
 
+/*mask to cover areas*/
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 150px;
@@ -642,6 +577,7 @@ ul {
   clip: rect(0px, 150px, 150px, 75px);
 }
 
+/*circle inside circle*/
 .circle-wrap .inside-circle {
   width: 122px;
   height: 122px;
@@ -663,12 +599,14 @@ ul {
   background: linear-gradient(90deg, rgba(254, 255, 0, 1) 0%, rgba(79, 255, 165, 1) 52%, rgba(0, 255, 239, 1) 100%);
 }
 
+/*circle split in 1/2 so 360/100 multiplied by 90% to get degrees*/
 .mask.full,
 .circle .fill {
   animation: fill ease-in-out 3s;
   transform: rotate(162deg);
 }
 
+/*animation to fill*/
 @keyframes fill {
   0% {
     transform: rotate(0deg);
@@ -679,6 +617,7 @@ ul {
   }
 }
 
+/*profile stats info*/
 .title {
   text-align: center;
   margin-top: 2em;
@@ -694,7 +633,6 @@ ul {
   font-size: 1em;
   margin-top: -1em;
 }
-
 
 .info {
   text-align: center;
@@ -717,11 +655,10 @@ ul {
   margin-top: -3em;
 }
 
-
+/*font awesome icons, focus selector does not work here...*/
 .fa-edit,
 .fa-plus {
   color: rgb(37, 37, 37);
-
 }
 
 .fa-edit:hover,

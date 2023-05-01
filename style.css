@@ -17,7 +17,7 @@ body {
   color: rgb(71, 71, 71);
 }
 
-h1{
+h1 {
   font-weight: 700;
   font-style: normal;
   color: rgb(44, 44, 44);
@@ -31,6 +31,10 @@ h2 {
   font-size: 14px;
   color: rgb(44, 44, 44);
   justify-content: center;
+}
+
+h2:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -47,9 +51,10 @@ h2 {
   background-color: #F9F7F4;
   align-items: baseline;
   padding-bottom: 10em;
-  z-index: 1;
+  z-index: 1; 
 }
 
+/*user profile pic*/ 
 .profile {
   display: block;
   width: 10px;
@@ -64,18 +69,18 @@ nav {
   box-sizing: border-box;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 1;  /*set the nav bar as the top layer*/ 
 }
-
 
 nav ul {
   list-style: none;
   padding: 3em 7em 0 7em;
   display: flex;
   margin: 0 0 3em;
-  justify-content: space-around;
+  justify-content: space-around; 
 }
 
+/*separate into two columns-main+aside*/ 
 main {
   background-color: #F9F7F4;
   border-radius: 2em;
@@ -92,11 +97,6 @@ aside {
   padding-bottom: 4em;
 }
 
-.shelves {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-}
-
 .site-footer {
   padding: 2.5em 2.5em 3.5em;
   text-align: center;
@@ -106,7 +106,7 @@ aside {
 .site-footer a {
   text-decoration: underline;
 }
-
+/* set media query*/ 
 @media (min-width: 62em) {
   .wrapper {
     display: grid;
@@ -146,6 +146,7 @@ aside {
   font-size: 34px;
 }
 
+/* search bar*/ 
 input[type=text] {
   background: #FFFFFF;
   width: 30%;
@@ -158,7 +159,11 @@ input[type=text] {
   border-radius: 3px;
 }
 
-
+/* bookshelves*/ 
+.shelves {
+  display: grid; /*set grid for bookshelves columnr*/ 
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
 
 .shelves p {
   position: relative;
@@ -171,17 +176,18 @@ input[type=text] {
   text-decoration: underline;
 }
 
+/*pop up effect on hover*/ 
 .rounded:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transition: 0.4s;
   box-shadow: 1px 1px 2px rgb(105, 105, 105), 0 0 4px rgb(140, 140, 145), 0 0 3px rgb(57, 57, 60);
-
 }
 
-.rounded {
+/*round corners*/ 
+.rounded { 
   transition: all .2s ease-in-out;
-    border-radius: 7px;
+  border-radius: 7px;
 }
 
 .book:nth-child(2) {
@@ -210,6 +216,7 @@ input[type=text] {
   text-decoration: underline;
 }
 
+/*make a post button*/ 
 form {
   padding: 2em 0;
   background-color: white;
@@ -237,23 +244,6 @@ form input[type=text] {
   margin-left: 2em;
 }
 
-.active {
-  text-decoration: underline;
-}
-
-/* .bottomnav{
-  padding:  2em;
-  margin-top: .8em;
-}
-
-.bottomnav a{
-  text-decoration: none;
-  color: black;
-  padding: 0  2em;
-  display: inline-block;
-  position: relative;
-}
-
 .bottomnav a:active {
   content: '';
   position: fixed;
@@ -262,12 +252,11 @@ form input[type=text] {
   border-radius: 5px;
   background-color: #000000;
   transform-origin: bottom right;
-  transition: all 0.5s ;
-} */
+  transition: all 0.5s;
+}
 
-ul {
+*/ ul {
   list-style-type: none;
-  ;
 }
 
 li {
@@ -275,7 +264,7 @@ li {
   display: flex;
 }
 
-
+/*links*/ 
 a:link {
   text-decoration: none;
   color: #000000;
@@ -289,11 +278,15 @@ a:hover {
   color: rgb(91, 91, 91);
 }
 
+a:active {
+  text-decoration: underline;
+}
 
 .cover {
   border-radius: 6px;
 }
 
+/*bar underneath search*/ 
 hr {
   position: relative;
   top: 9px;
@@ -304,6 +297,7 @@ hr {
   width: 64%;
 }
 
+/*reading progress bar*/ 
 .progress-bar {
   width: 80%;
   background-color: #ffffff;
@@ -328,6 +322,7 @@ hr {
   margin: 0 0 3em;
 }
 
+/*user post */ 
 .post-block {
   background: #fff;
   margin-bottom: 25px;
@@ -341,6 +336,7 @@ hr {
   margin-top: -1.8em;
 }
 
+/*book cover pop up transition */ 
 img.cover:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -348,11 +344,12 @@ img.cover:hover {
   box-shadow: 1px 1px 2px rgb(105, 105, 105), 0 0 2px rgb(140, 140, 145), 0 0 3px rgb(118, 118, 118);
 }
 
+/* fade out transition to appear more seamless*/ 
 img.cover {
   transition: all .3s ease-in-out;
 }
 
-
+/*post profile pic circle*/ 
 img.author-img {
   height: 45px;
   width: 45px;
@@ -361,15 +358,12 @@ img.author-img {
   margin-top: 1em;
 }
 
-
 img.author-img1 {
   height: 45px;
   width: 45px;
   border-radius: 45px;
   margin-left: 3em;
 }
-
-
 
 img.author-img.author-img--small {
   height: 30px;
@@ -412,15 +406,14 @@ img.author-img.author-img--small {
   font-size: 13.2px;
 }
 
+/*icons on post block*/ 
 .actions {
   display: flex;
   flex-direction: row;
   padding-left: 40em;
   justify-content: space-around;
   color: none;
-
 }
-
 
 .time {
   font-size: 14px;
@@ -439,6 +432,7 @@ img.author-img.author-img--small {
   margin-top: 24px;
 }
 
+/*star color */ 
 .checked {
   color: orange;
 }
@@ -452,12 +446,14 @@ img.author-img.author-img--small {
   text-decoration: none;
 }
 
+/*not sure how to move this element without messing up .navbar a elements */ 
 .underline {
   border-bottom: 4px solid currentColor;
   border-radius: 2px;
   color: #000000;
 }
 
+/* dropdown button*/ 
 .dropdown {
   float: left;
   overflow: hidden;
@@ -466,9 +462,6 @@ img.author-img.author-img--small {
   background-color: #58c07c;
   margin-right: 14em;
 }
-
-/* margin-top: -6em; */
-
 
 .dropdown .dropbtn {
   font-size: 16px;
@@ -482,14 +475,12 @@ img.author-img.author-img--small {
   min-width: 200px;
   text-align: left;
   border: #40be64;
-
 }
 
 .dropdown a:hover,
 .dropdown:hover .dropbtn {
   background-color: rgb(72, 149, 83);
   border-radius: 10px;
-
 }
 
 .dropdown-content {
@@ -501,7 +492,6 @@ img.author-img.author-img--small {
   z-index: 1;
   text-align: left;
   border-radius: 10px;
-
 }
 
 .dropdown-content a {
@@ -511,7 +501,6 @@ img.author-img.author-img--small {
   font-size: 13px;
   text-decoration: none;
   letter-spacing: .5px;
-
 }
 
 .dropdown-content a:hover {
@@ -522,25 +511,31 @@ img.author-img.author-img--small {
   display: block;
 }
 
-.fa-caret-down:before {
-  padding-left: 7em;
-}
-
+/*underline bar*/ 
 .bar {
   display: flex;
   margin-left: 10em;
   margin-bottom: -1.5em;
 }
 
+.bar>li {
+  margin-left: 2em;
+}
 
 .starbar {
   margin-bottom: 1em;
 }
 
-.fa-heart,
-.fa-comment{
+/*icons from font awesome*/ 
+.fa-caret-down:before {
+  padding-left: 7em;
+}
+
+.fa-heart, /*tried to get icons to be clickable with focus:, but does not change..?*/ 
+.fa-comment {
   color: #acacac;
 }
+
 .fa-heart:hover {
   color: red;
 }
@@ -548,12 +543,3 @@ img.author-img.author-img--small {
 .fa-comment:hover {
   color: rgb(174, 219, 242);
 }
-
-h2:hover{
-  text-decoration: underline;
-}
-
-.bar > li{
-  margin-left: 2em;
-}
-
