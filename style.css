@@ -148,19 +148,30 @@ input[type=text] {
 }
 
 /* bookshelves*/ 
-.shelves {
+.bookshelves {
   display: grid; /*set grid for bookshelves columnr*/ 
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
 }
 
-.shelves p {
-  position: relative;
-  left: 155px;
-  bottom: 120px;
+.bookshelf {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   font-weight: 600;
+  margin: 1em;
 }
 
-.shelves p:hover {
+.bookshelf img {
+  width: 140px;
+  height: 140px;
+}
+
+.bookshelf p {
+  margin: 1em;
+  flex: 1 1 auto;
+}
+
+.bookshelf p:hover {
   text-decoration: underline;
 }
 
@@ -178,29 +189,38 @@ input[type=text] {
   border-radius: 7px;
 }
 
-.book:nth-child(2) {
-  margin-bottom: -2em;
+.currently-reading-container {
+  margin-bottom: 8em;
 }
 
-.book p:nth-child(even) {
-  position: relative;
-  left: 155px;
-  bottom: 160px;
+.currently-reading-book {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3em 1em;
+}
+
+.currently-reading-book img {
+   width: 140px;
+   height: 200px;
+}
+
+.currently-reading-book div {
+  margin: 1em;
+}
+
+.currently-reading-book p:nth-child(even) {
   font-family: "Lato", serif;
   font-weight: 600;
   font-style: bold;
   font-size: 15px;
 }
 
-.book p {
-  position: relative;
-  left: 155px;
-  bottom: 170px;
+.currently-reading-book p {
   font-family: "Lato", serif;
   font-size: 14px;
 }
 
-.book p:hover {
+.currently-reading-book p:hover {
   text-decoration: underline;
 }
 
