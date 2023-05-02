@@ -43,6 +43,7 @@ h2:hover {
 
 .wrapper {
   margin: 0 auto;
+  padding: 1em;
   max-width: 1600px;
   background-color: #F9F7F4;
 }
@@ -94,7 +95,8 @@ nav ul {
   background-color: #F9F7F4;
   border-radius: 2em;
   color: rgb(160, 160, 160);
-  padding-bottom: 4em;
+  margin: 0 auto 4em;
+  max-width: 750px;
 }
 
 .site-footer {
@@ -110,7 +112,7 @@ nav ul {
 @media (min-width: 62em) {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "aside    main"
       "footer   footer";
@@ -232,10 +234,11 @@ form {
   border-color: #ffffff;
   height: 50px;
   width: 750px;
+  margin-left: auto;
+  margin-right: auto;
   text-shadow: none;
   text-align: center;
   border-radius: 8px;
-  margin-left: 12em;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
@@ -296,13 +299,11 @@ a:active {
 
 /*bar underneath search*/ 
 hr {
-  position: relative;
-  top: 9px;
   border: none;
   height: 2px;
   background: rgb(217, 217, 217);
   margin-bottom: 30px;
-  width: 64%;
+  margin-top: 30px;
 }
 
 /*reading progress bar*/ 
@@ -324,9 +325,6 @@ hr {
 }
 
 .main-content {
-  padding: 4em 0;
-  max-width: 940px;
-  max-height: 300px;
   margin: 0 0 3em;
 }
 
@@ -334,7 +332,6 @@ hr {
 .post-block {
   background: #fff;
   margin-bottom: 25px;
-  margin-left: 12em;
   border-radius: 8px;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   padding: 1em;
@@ -522,8 +519,7 @@ img.author-img.author-img--small {
 /*underline bar*/ 
 .bar {
   display: flex;
-  margin-left: 10em;
-  margin-bottom: -1.5em;
+  margin-bottom: 3em;
 }
 
 .bar>li {
