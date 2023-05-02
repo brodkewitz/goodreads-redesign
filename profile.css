@@ -482,6 +482,7 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
   width: 100%;
   padding-top: 4em;
 }
@@ -511,6 +512,15 @@ hr {
   border-radius: 8px;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   margin-right: 18em;
+  padding: 2em 0;
+}
+
+.double-column h1 {
+  margin: 0 0 1rem;
+}
+
+.double-column h2 {
+  margin: 0 0 1rem;
 }
 
 /*bookshelves column*/
@@ -557,7 +567,7 @@ hr {
 
 /*circular progress bar animation*/
 .circle-wrap {
-  margin: 150px auto;
+  margin: 3em auto 8em;
   width: 150px;
   height: 150px;
   background: #eeeeee;
@@ -620,23 +630,20 @@ hr {
 /*profile stats info*/
 .title {
   text-align: center;
-  margin-top: 2em;
   font-size: 3em;
+  margin: 1em 0;
 }
 
-.title>h2 {
+.title h2 {
   font-size: .8em;
-  margin-top: -1em;
 }
 
-.info>h2 {
+.info h2 {
   font-size: 1em;
-  margin-top: -1em;
 }
 
 .info {
   text-align: center;
-  margin-top: -8em;
   font-size: 2em;
 }
 
@@ -644,6 +651,11 @@ hr {
 .title a {
   text-decoration: underline;
   font-size: 14px;
+}
+
+/*books read+pages this year*/
+.info section {
+  margin-bottom: 2em;
 }
 
 .edit {
