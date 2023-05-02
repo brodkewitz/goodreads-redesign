@@ -80,8 +80,8 @@ nav ul {
   justify-content: space-around; 
 }
 
-/*separate into two columns-main+aside*/ 
-main {
+/*separate into two columns*/ 
+.user-library {
   background-color: #F9F7F4;
   border-radius: 2em;
   margin-left: auto;
@@ -90,7 +90,7 @@ main {
 
 }
 
-aside {
+.activity-feed {
   background-color: #F9F7F4;
   border-radius: 2em;
   color: rgb(160, 160, 160);
@@ -110,34 +110,22 @@ aside {
 @media (min-width: 62em) {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas:
-      "main     aside"
+      "aside    main"
       "footer   footer";
   }
 
-  .site-header {
-    grid-area: header;
-  }
-
-  header {
-    grid-area: header;
-  }
-
-  main {
+  .activity-feed {
     grid-area: main;
   }
 
-  aside {
+  .user-library {
     grid-area: aside;
   }
 
   .site-footer {
     grid-area: footer;
-  }
-
-  .shelves {
-    grid-template-columns: 1fr;
   }
 }
 
