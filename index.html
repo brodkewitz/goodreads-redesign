@@ -23,7 +23,6 @@
                 <a class="logo" href="#home"><img src="./goodreads-logo.png" style="width: 140px;height:30px;"></a>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Community</a></li>
-                </div>
                 <input type="text" placeholder="Search books">
                 <li><a href="#"> <img src="./notification-icon.svg" /></a></li>
                 <li><a href="#"> <img src="./message-icon.svg" id="message" /></a></li>
@@ -32,39 +31,56 @@
         </nav>
     </header>
     <main class="wrapper">
-        <main class="main">
-            <header class="left-header">
-                <!-- currently reading section start -->
+        <section class="user-library">
+            <!-- currently reading section start -->
+            <section class="currently-reading-container">
                 <h2>CURRENTLY READING</h2>
-                <div class="book">
-                    <img src="./current-read1.jpg" class="cover" style="width: 140px;height:200px;">
-                    <p>Why Fish Don't Exist</p>
-                    <p>by Lulu Miller</p>
+                <div class="currently-reading">
+                    <div class="currently-reading-book">
+                        <img src="./current-read1.jpg" class="cover">
+                        <div>
+                            <p>Why Fish Don't Exist</p>
+                            <p>by Lulu Miller</p>
+                        </div>
+                    </div>
+                    <div class="currently-reading-book">
+                        <img src="./current-read2.jpg" class="cover">
+                        <div>
+                            <p>Conversations with <br>Friends</p>
+                            <p>by Sally Rooney</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="book">
-                    <img src="./current-read2.jpg" class="cover" style="width: 140px;height:200px;">
-                    <p>Conversations with <br>Friends</p>
-                    <p>by Sally Rooney</p>
-                </div>
-                </div>
-                <!-- currently reading section end -->
-                <!-- bookshelves section start -->
+            </section>
+            <!-- currently reading section end -->
+            <!-- bookshelves section start -->
+            <section class="bookshelves-container">
                 <h2>BOOKSHELVES</h2>
-                <div class="shelves">
-                    <img src="./shelf1.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p>Favorites</p>
-                    <img src="./shelf2.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p>Cookbooks</p>
-                    <img src="./shelf3.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p>Summer Reads</p>
-                    <img src="./shelf4.jpg" class="rounded" style="width: 140px;height:140px;">
-                    <p>Want to Read</p>
+                <div class="bookshelves">
+                    <div class="bookshelf">
+                        <img src="./shelf1.jpg" class="rounded">
+                        <p>Favorites</p>
+                    </div>
+                    <div class="bookshelf">
+                        <img src="./shelf2.jpg" class="rounded">
+                        <p>Cookbooks</p>
+                    </div>
+                    <div class="bookshelf">
+                        <img src="./shelf3.jpg" class="rounded">
+                        <p>Summer Reads</p>
+                    </div>
+                    <div class="bookshelf">
+                        <img src="./shelf4.jpg" class="rounded">
+                        <p>Want to Read</p>
+                    </div>
+                    <div class="bookshelf">
+                        <a href="#view-more">View More</a>
+                    </div>
                 </div>
-                <a href="#view-more">View More</a>
-                 <!-- bookshelves section end -->
-            </header>
-        </main>
-        <aside>
+            </section>
+            <!-- bookshelves section end -->
+        </section>
+        <section class="activity-feed">
             <form> <!-- write a review section-->
                 <a href="#!"><img src="./profile-icon2.png" alt="User" class="author-img1"></a>
                 <input type="text" id="write" placeholder="Write a Review"><br>
@@ -76,15 +92,15 @@
                 </span>
                 <li> <a href="#">RECOMMENDATIONS</a></li>
             </ul>
-            <section class="main-content">
+            <article class="main-content">
                 <div class="container">
                     <div class="post-block">
                         <a href="#!" class="profile-pic"><img src="./laila-pfp.jpg" alt="User" class="author-img"></a>
                         <div>
                             <h5 class="profile-name"><a href="#!" class="profile-name">Laila started reading</a>
                                 <p class="time">23m</p>
+                            </h5>
                         </div>
-                        </h5>
                         <div class="post-block__content"><!-- first post start-->
                             <img src="./post1.jpg" alt="Content img">
                             <div class="content-vertical"><!-- book title-->
@@ -126,9 +142,8 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </section><!-- first post end-->
-            <section class="main-content"> <!-- second post start-->
+            </article><!-- first post end-->
+            <article class="main-content"> <!-- second post start-->
                 <div class="container">
                     <div class="post-block">
                         <a href="#!" class="profile-pic"><img src="./emma-pfp.jfif" alt="User" class="author-img"></a>
@@ -174,17 +189,16 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </section><!-- second post end-->
-            <section class="main-content"><!-- third post start-->
+            </article><!-- second post end-->
+            <article class="main-content"><!-- third post start-->
                 <div class="container">
                     <div class="post-block">
                         <a href="#!" class="profile-pic"><img src="./laila-pfp.jpg" alt="User" class="author-img"></a>
                         <div>
                             <h5 class="profile-name"><a href="#!" class="profile-name">Laila started reading</a>
                                 <p class="time">6h</p>
+                            </h5>
                         </div>
-                        </h5>
                         <div class="post-block__content">
                             <img src="./post3.jpg" alt="Content img">
                             <div class="content-vertical">
@@ -223,11 +237,11 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </section><!-- third post end-->
-        </aside>
+            </article><!-- third post end-->
+        </section>
         <footer class="site-footer">
         </footer>
+    </main>
 </body>
 
 </html>

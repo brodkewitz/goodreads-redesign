@@ -43,6 +43,7 @@ h2:hover {
 
 .wrapper {
   margin: 0 auto;
+  padding: 1em;
   max-width: 1600px;
   background-color: #F9F7F4;
 }
@@ -80,8 +81,8 @@ nav ul {
   justify-content: space-around; 
 }
 
-/*separate into two columns-main+aside*/ 
-main {
+/*separate into two columns*/ 
+.user-library {
   background-color: #F9F7F4;
   border-radius: 2em;
   margin-left: auto;
@@ -90,11 +91,12 @@ main {
 
 }
 
-aside {
+.activity-feed {
   background-color: #F9F7F4;
   border-radius: 2em;
   color: rgb(160, 160, 160);
-  padding-bottom: 4em;
+  margin: 0 auto 4em;
+  max-width: 750px;
 }
 
 .site-footer {
@@ -110,34 +112,22 @@ aside {
 @media (min-width: 62em) {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
-      "main     aside"
+      "aside    main"
       "footer   footer";
   }
 
-  .site-header {
-    grid-area: header;
-  }
-
-  header {
-    grid-area: header;
-  }
-
-  main {
+  .activity-feed {
     grid-area: main;
   }
 
-  aside {
+  .user-library {
     grid-area: aside;
   }
 
   .site-footer {
     grid-area: footer;
-  }
-
-  .shelves {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -160,19 +150,30 @@ input[type=text] {
 }
 
 /* bookshelves*/ 
-.shelves {
+.bookshelves {
   display: grid; /*set grid for bookshelves columnr*/ 
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
 }
 
-.shelves p {
-  position: relative;
-  left: 155px;
-  bottom: 120px;
+.bookshelf {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   font-weight: 600;
+  margin: 1em;
 }
 
-.shelves p:hover {
+.bookshelf img {
+  width: 140px;
+  height: 140px;
+}
+
+.bookshelf p {
+  margin: 1em;
+  flex: 1 1 auto;
+}
+
+.bookshelf p:hover {
   text-decoration: underline;
 }
 
@@ -190,29 +191,38 @@ input[type=text] {
   border-radius: 7px;
 }
 
-.book:nth-child(2) {
-  margin-bottom: -2em;
+.currently-reading-container {
+  margin-bottom: 8em;
 }
 
-.book p:nth-child(even) {
-  position: relative;
-  left: 155px;
-  bottom: 160px;
+.currently-reading-book {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3em 1em;
+}
+
+.currently-reading-book img {
+   width: 140px;
+   height: 200px;
+}
+
+.currently-reading-book div {
+  margin: 1em;
+}
+
+.currently-reading-book p:nth-child(even) {
   font-family: "Lato", serif;
   font-weight: 600;
   font-style: bold;
   font-size: 15px;
 }
 
-.book p {
-  position: relative;
-  left: 155px;
-  bottom: 170px;
+.currently-reading-book p {
   font-family: "Lato", serif;
   font-size: 14px;
 }
 
-.book p:hover {
+.currently-reading-book p:hover {
   text-decoration: underline;
 }
 
@@ -224,10 +234,11 @@ form {
   border-color: #ffffff;
   height: 50px;
   width: 750px;
+  margin-left: auto;
+  margin-right: auto;
   text-shadow: none;
   text-align: center;
   border-radius: 8px;
-  margin-left: 12em;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
@@ -288,13 +299,11 @@ a:active {
 
 /*bar underneath search*/ 
 hr {
-  position: relative;
-  top: 9px;
   border: none;
   height: 2px;
   background: rgb(217, 217, 217);
   margin-bottom: 30px;
-  width: 64%;
+  margin-top: 30px;
 }
 
 /*reading progress bar*/ 
@@ -316,9 +325,6 @@ hr {
 }
 
 .main-content {
-  padding: 4em 0;
-  max-width: 940px;
-  max-height: 300px;
   margin: 0 0 3em;
 }
 
@@ -326,7 +332,6 @@ hr {
 .post-block {
   background: #fff;
   margin-bottom: 25px;
-  margin-left: 12em;
   border-radius: 8px;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   padding: 1em;
@@ -514,8 +519,7 @@ img.author-img.author-img--small {
 /*underline bar*/ 
 .bar {
   display: flex;
-  margin-left: 10em;
-  margin-bottom: -1.5em;
+  margin-bottom: 3em;
 }
 
 .bar>li {
